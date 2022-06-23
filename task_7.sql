@@ -6,7 +6,7 @@ turno int not null,
 sayfasayisi int not null DEFAULT 0
 );
 
-DROP TABLE kitap;
+
 
 INSERT INTO kitap VALUES (1,26,3,368);
 INSERT INTO kitap VALUES (2,6,1,220);
@@ -29,7 +29,7 @@ create table islemler
 turno int PRIMARY KEY,
 kitap_turu varchar(10) NOT NULL
 );
-DROP TABLE islemler;
+
 
 INSERT INTO islemler VALUES (1,'Dram');
 INSERT INTO islemler VALUES (2,'Komedi');
@@ -47,7 +47,7 @@ ogrsoyad VARCHAR(10) NOT NULL,
 cinsiyet VARCHAR(1) NOT NULL,
 sinif VARCHAR(3) DEFAULT''
 );
-DROP TABLE ogrenci;
+
 INSERT INTO ogrenci VALUES (1,'ahmet','cansever','e','10a');
 INSERT INTO ogrenci VALUES (2,'niyazi','sevinc','e','11b');
 INSERT INTO ogrenci VALUES (3,'ismail ','sevinc','e','10b');
@@ -81,3 +81,4 @@ INSERT INTO ogrenci VALUES (17,'sema','sekmen','k','10b');
 -- Task 6: Her türdeki en az sayfa sayısı olan kitapları listeleyiniz.
 
 -- Task 7***: Her türden kaç tane kitap olduğunu listeleyiniz.(Tür isimleri de olsun)
+
